@@ -1,4 +1,7 @@
 #pragma once
+#include <string>
+#include "pokemons.h"
+using namespace std;
 
 namespace PokédexAnthonyBelteton1171422 {
 
@@ -22,6 +25,7 @@ namespace PokédexAnthonyBelteton1171422 {
 			//TODO: agregar código de constructor aquí
 			//
 		}
+		
 
 	protected:
 		/// <summary>
@@ -42,6 +46,8 @@ namespace PokédexAnthonyBelteton1171422 {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::TextBox^ textBox1;
 	protected:
 
 	private:
@@ -64,6 +70,8 @@ namespace PokédexAnthonyBelteton1171422 {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -90,7 +98,7 @@ namespace PokédexAnthonyBelteton1171422 {
 			this->ORDENADO->FormattingEnabled = true;
 			this->ORDENADO->Location = System::Drawing::Point(197, 156);
 			this->ORDENADO->Name = L"ORDENADO";
-			this->ORDENADO->Size = System::Drawing::Size(169, 329);
+			this->ORDENADO->Size = System::Drawing::Size(168, 329);
 			this->ORDENADO->TabIndex = 2;
 			// 
 			// button1
@@ -120,11 +128,30 @@ namespace PokédexAnthonyBelteton1171422 {
 			this->button3->Text = L"Shell Sort ";
 			this->button3->UseVisualStyleBackColor = true;
 			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(480, 357);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(87, 38);
+			this->button4->TabIndex = 6;
+			this->button4->Text = L"Mostrar pokemons";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &MyForm1::button4_Click);
+			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(230, 74);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(135, 20);
+			this->textBox1->TabIndex = 7;
+			// 
 			// MyForm1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(809, 601);
+			this->Controls->Add(this->textBox1);
+			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
@@ -135,10 +162,17 @@ namespace PokédexAnthonyBelteton1171422 {
 			this->Text = L"MyForm1";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
 	private: System::Void listBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+		
 	}
-	};
+	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+		pokemons^ infopoke = gcnew pokemons();
+		
+		textBox1->Text = "hola";
+	}
+};
 }

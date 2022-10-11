@@ -1,4 +1,5 @@
 #include "MyForm1.h"
+#include <string>
 using namespace System;
 using namespace System::Windows::Forms;
 
