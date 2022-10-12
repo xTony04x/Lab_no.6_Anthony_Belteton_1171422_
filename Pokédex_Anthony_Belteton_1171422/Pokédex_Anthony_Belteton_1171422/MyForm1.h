@@ -87,6 +87,10 @@ namespace PokédexAnthonyBelteton1171422 {
 			// DESORDENADO
 			// 
 			this->DESORDENADO->FormattingEnabled = true;
+			this->DESORDENADO->Items->AddRange(gcnew cli::array< System::Object^  >(11) {
+				L"1,Bulbasaur,001", L"1,charmander,004", L"1,squirtle,007",
+					L"1,caterpie,010", L"1,pidgey,016", L"1,rattata,019", L"1,pikachu,025", L"1,nidoran,029", L"1,vulpix,037", L"1,zubat,041", L"3"
+			});
 			this->DESORDENADO->Location = System::Drawing::Point(34, 156);
 			this->DESORDENADO->Name = L"DESORDENADO";
 			this->DESORDENADO->Size = System::Drawing::Size(157, 329);
@@ -144,6 +148,7 @@ namespace PokédexAnthonyBelteton1171422 {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(135, 20);
 			this->textBox1->TabIndex = 7;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm1::textBox1_TextChanged);
 			// 
 			// MyForm1
 			// 
@@ -170,9 +175,40 @@ namespace PokédexAnthonyBelteton1171422 {
 		
 	}
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
-		pokemons^ infopoke = gcnew pokemons();
 		
-		textBox1->Text = "hola";
+		
 	}
+
+private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	
+
+
+}
 };
 }
+class pokemon
+{
+public:
+	~pokemon() {}
+	pokemon(int generacion, string nombres, int nationumb) {
+		this->nationumb = nationumb;
+		this->nombres = nombres;
+		this->generacion = generacion;
+	}
+	int getnationumb() {
+		return nationumb;
+	}
+	int getgeneracion() {
+		return generacion;
+	}
+	string getnombres() {
+		return nombres;
+	}
+		
+	
+private:
+	string nombres;
+	int nationumb;
+	int generacion;
+
+};
