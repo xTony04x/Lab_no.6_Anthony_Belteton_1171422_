@@ -1,11 +1,18 @@
 #pragma once
-#include<string.h>
 #include <string>
-#include <iostream>
-using namespace std;
 ref class pokemons
 {
-public: string infopokemon();
+public:
+	System::String^ nombres;
+	int generacion;
+	int NT;
 
+	pokemons(System::String^_nombres, int _generacion, int _NT ) {
+		NT = _NT;
+		generacion = _generacion;
+		nombres = _nombres;
 };
+
+
+
 

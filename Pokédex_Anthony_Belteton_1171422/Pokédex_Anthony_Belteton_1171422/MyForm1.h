@@ -175,7 +175,7 @@ namespace PokédexAnthonyBelteton1171422 {
 		
 	}
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
-		
+		array< pokemons^ >^ MyClass1 = gcnew array< pokemons^ >(10);
 		
 	}
 
@@ -186,29 +186,3 @@ private: System::Void textBox1_TextChanged(System::Object^ sender, System::Event
 }
 };
 }
-class pokemon
-{
-public:
-	~pokemon() {}
-	pokemon(int generacion, string nombres, int nationumb) {
-		this->nationumb = nationumb;
-		this->nombres = nombres;
-		this->generacion = generacion;
-	}
-	int getnationumb() {
-		return nationumb;
-	}
-	int getgeneracion() {
-		return generacion;
-	}
-	string getnombres() {
-		return nombres;
-	}
-		
-	
-private:
-	string nombres;
-	int nationumb;
-	int generacion;
-
-};
