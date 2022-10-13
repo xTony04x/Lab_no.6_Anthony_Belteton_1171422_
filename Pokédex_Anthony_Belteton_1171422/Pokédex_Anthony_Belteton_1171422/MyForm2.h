@@ -67,7 +67,7 @@ namespace PokédexAnthonyBelteton1171422 {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(2, -5);
+			this->pictureBox1->Location = System::Drawing::Point(0, 0);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(805, 599);
 			this->pictureBox1->TabIndex = 1;
@@ -75,13 +75,10 @@ namespace PokédexAnthonyBelteton1171422 {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(478, 297);
+			this->button1->Location = System::Drawing::Point(0, 0);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(97, 44);
-			this->button1->TabIndex = 2;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm2::button1_Click);
+			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->TabIndex = 6;
 			// 
 			// button2
 			// 
@@ -129,9 +126,26 @@ namespace PokédexAnthonyBelteton1171422 {
 #pragma endregion
 
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		array<pokemons^>^ mispokemons = gcnew array<pokemons^>(60);
+		array<pokemons^>^ mispokemons = gcnew array<pokemons^>(89);
+		
+		mispokemons[0] = gcnew pokemons(1,"Bulbasaur",001);
+		mispokemons[1] = gcnew pokemons(1, "Charmander", 004);
+		mispokemons[2] = gcnew pokemons(1, "squirtle", 007);
+		mispokemons[3] = gcnew pokemons(1, "Bulbasaur", 001);
+		mispokemons[4] = gcnew pokemons(1, "Bulbasaur", 001);
+		mispokemons[5] = gcnew pokemons(1, "Bulbasaur", 001);
+		mispokemons[6] = gcnew pokemons(1, "Bulbasaur", 001);
+		mispokemons[7] = gcnew pokemons(1, "Bulbasaur", 001);
+		mispokemons[8] = gcnew pokemons(1, "Bulbasaur", 001);
+		mispokemons[9] = gcnew pokemons(1, "Bulbasaur", 001);
+		mispokemons[10] = gcnew pokemons(1, "Bulbasaur", 001);
+		mispokemons[11] = gcnew pokemons(1, "Bulbasaur", 001);
+		mispokemons[12] = gcnew pokemons(1, "Bulbasaur", 001);
+		mispokemons[13] = gcnew pokemons(1, "Bulbasaur", 001);
+
 
 	}
 
 };
 }
+

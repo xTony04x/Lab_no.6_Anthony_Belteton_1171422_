@@ -3,14 +3,15 @@
 ref class pokemons
 {
 public:
-	System::String^ nombres;
 	int generacion;
+	System::String^ nombres;
 	int NT;
 
-	pokemons(System::String^_nombres, int _generacion, int _NT ) {
-		NT = _NT;
+	pokemons(int _generacion,System::String^ _nombres, int _NT) {
 		generacion = _generacion;
 		nombres = _nombres;
+		NT = _NT;
+	}
 };
 
 
