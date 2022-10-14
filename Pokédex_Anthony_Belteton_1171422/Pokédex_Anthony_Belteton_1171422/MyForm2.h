@@ -126,7 +126,7 @@ namespace PokédexAnthonyBelteton1171422 {
 #pragma endregion
 
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		array<pokemons^>^ mispokemons = gcnew array<pokemons^>(89);
+		array<pokemons^>^ mispokemons = gcnew array<pokemons^>(79);
 		//primera generacion
 		mispokemons[0] = gcnew pokemons(1,"Bulbasaur",001);
 		mispokemons[1] = gcnew pokemons(1, "Charmander", 004);
@@ -161,17 +161,38 @@ namespace PokédexAnthonyBelteton1171422 {
 		mispokemons[28] = gcnew pokemons(2, "Wobbuffet", 202);
 		mispokemons[29] = gcnew pokemons(2, "celebi", 251);
 		//3ra generacion
-		mispokemons[30 = gcnew pokemons(3, "chikorita", 152);
-		mispokemons[21] = gcnew pokemons(3, "noctowl", 164);
-		mispokemons[22] = gcnew pokemons(3, "Crobat", 169);
-		mispokemons[23] = gcnew pokemons(3, "pichu", 172);
-		mispokemons[24] = gcnew pokemons(3, "Cleffa", 173);
-		mispokemons[25] = gcnew pokemons(3, "Natu", 177);
-		mispokemons[26] = gcnew pokemons(3, "Marill", 183);
-		mispokemons[27] = gcnew pokemons(3, "wooper", 194);
-		mispokemons[28] = gcnew pokemons(3,"Wobbuffet", 202);
-		mispokemons[29] = gcnew pokemons(3, "celebi", 251);
-
+		mispokemons[30] = gcnew pokemons(3, "Torchic", 255);
+		mispokemons[31] = gcnew pokemons(3, "Lotad", 270);
+		mispokemons[32] = gcnew pokemons(3, "Taillow", 276);
+		mispokemons[33] = gcnew pokemons(3, "Ralts", 280);
+		mispokemons[34] = gcnew pokemons(3, "Skitty", 300);
+		mispokemons[35] = gcnew pokemons(3, "Plusle", 311);
+		mispokemons[36] = gcnew pokemons(3, "Swablu", 333);
+		mispokemons[37] = gcnew pokemons(3, "Spheal", 363);
+		mispokemons[38] = gcnew pokemons(3, "Spoink", 325);
+		mispokemons[39] = gcnew pokemons(3, "Wailmer", 251);
+		//5ta generacion
+		mispokemons[40] = gcnew pokemons(4, "Snivy",495);
+		mispokemons[41] = gcnew pokemons(4, "Tepig",498);
+		mispokemons[42] = gcnew pokemons(4, "Oshawott",501);
+		mispokemons[43] = gcnew pokemons(4, "Watchog",505);
+		mispokemons[44] = gcnew pokemons(4, "Pansage",511);
+		mispokemons[45] = gcnew pokemons(4, "Munna",517);
+		mispokemons[46] = gcnew pokemons(4, "Pidove",519);
+		mispokemons[47] = gcnew pokemons(4, "woobat",527);
+		mispokemons[48] = gcnew pokemons(4, "Gurduur",533);
+		mispokemons[49] = gcnew pokemons(4, "Rufflet",627);
+		//8va generacion 
+		mispokemons[50] = gcnew pokemons(8, "Grookey", 810);
+		mispokemons[51] = gcnew pokemons(8, "Sobble", 816);
+		mispokemons[52] = gcnew pokemons(8, "Rookidee", 821);
+		mispokemons[53] = gcnew pokemons(8, "Dottler", 825);
+		mispokemons[54] = gcnew pokemons(8, "Wooloo", 831);
+		mispokemons[55] = gcnew pokemons(8, "yamper", 835);
+		mispokemons[56] = gcnew pokemons(8, "Toxel", 848);
+		mispokemons[57] = gcnew pokemons(8, "Snom", 827);
+		mispokemons[58] = gcnew pokemons(8, "Zacian", 888);
+		mispokemons[59] = gcnew pokemons(8, "Applin", 840);
 	}
 
 };
