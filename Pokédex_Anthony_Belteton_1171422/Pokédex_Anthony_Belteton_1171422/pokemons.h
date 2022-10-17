@@ -1,19 +1,16 @@
 #pragma once
-#include <string>
 using namespace std;
-class pokemons
+using namespace System;
+ref class pokemons
 {
 public:
-	int generacion;
-	string nombres;
-	int NT;
-
-	pokemons(int _generacion,string _nombres, int _NT) {
-		generacion = _generacion;
-		nombres = _nombres;
-		NT = _NT;
-	}
+	String^ generacion;
+	String^ nombres;
+	String^ NT;
+	//nt = NATIONAL NUMBER
 };
+
+
 
 
 
