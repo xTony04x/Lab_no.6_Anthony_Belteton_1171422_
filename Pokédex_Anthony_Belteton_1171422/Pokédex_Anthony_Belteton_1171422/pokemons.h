@@ -9,6 +9,13 @@ public:
 	String^ NT;
 	//nt = NATIONAL NUMBER
 };
+ref class gen_2
+{
+public:
+	int genera;
+};
+
+
 
 
 
